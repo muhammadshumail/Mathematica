@@ -1,0 +1,80 @@
+On Command Prompt
+C:\Users\muham>cd C:\Users\muham\Documents\Quantum Information Technology\Mathematica
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git init
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git add JustToTest.txt
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git commit -m "Testing how to push a newly created file to Git Repository where origin main are already established"
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git push -u origin main
+
+
+_______________________________________________________________________________
+##Steps To Use GitHub Repositories
+Ensure Git is installed. 
+
+##Git Repository
+Create the git repository, for example:
+https://github.com/muhammadshumail/Mathematica.git
+
+##Local Repository
+1.	Launch command prompt
+Microsoft Windows [Version 10.0.26200.7462]
+(c) Microsoft Corporation. All rights reserved.
+
+2. Change to the path where you would like to create the corresponding local repository
+C:\Users\muham>cd C:\Users\muham\Documents\Quantum Information Technology
+
+3. Clone the remote repository to the local location
+C:\Users\muham\Documents\Quantum Information Technology>git clone https://github.com/muhammadshumail/Mathematica
+Cloning into 'Mathematica'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (7/7), done.
+
+4. Your local repository has been created with the same name. Change path to it.
+C:\Users\muham\Documents\Quantum Information Technology>cd Mathematica
+
+5. Just to check the short name for the remote repository.
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git remote -v
+origin  https://github.com/muhammadshumail/Mathematica (fetch)
+origin  https://github.com/muhammadshumail/Mathematica (push)
+
+6. Optional. I did it the first time. But you only have to do after you make changes.
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+7. Add your files to the local repository. Edit them. Update them. Things like that. Then add them.
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git add .
+
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git commit -m "Added RabiOscillation.nb"
+[main 9ba77e8] Added RabiOscillation.nb
+ 1 file changed, 2896 insertions(+)
+ create mode 100644 RabiOscillation.nb
+
+8. Check the status. Optional
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+9. Check the log. Optional
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git log --oneline -1
+9ba77e8 (HEAD -> main) Added RabiOscillation.nb
+
+10. Give it a final push.
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 38.19 KiB | 7.64 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/muhammadshumail/Mathematica
+   d634ad0..9ba77e8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+11. It's uploaded. Refresh your Git Repository URL to see your changes there.
+C:\Users\muham\Documents\Quantum Information Technology\Mathematica>
